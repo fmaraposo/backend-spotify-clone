@@ -1,0 +1,24 @@
+GET http://localhost:3000
+
+### FETCH SONGS
+GET http://localhost:3000/songs
+
+### FETCH A SONG
+GET http://localhost:3000/songs/1
+
+### CREATE NEW SONGS
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+    "title": "Bad Romance",
+    "artists": ["Lady Gaga"],
+    "releaseDate": "2015-09-29",
+    "duration": "02:34"
+}
+
+### DELETE A SONG
+DELETE http://localhost:3000/songs/1
+
+### UPDATE A SONG
+PUT http://localhost:3000/songs/1
